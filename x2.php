@@ -126,28 +126,6 @@ echo "=============================\n";
                                         $debug['respon'] = json_decode($datas, true);
 
          }else{
-         setpin:
-         echo "\n".color("nevy","?] Mau set pin?: y/n ");
-         $pilih1 = trim(fgets(STDIN));
-         if($pilih1 == "y" || $pilih1 == "Y"){
-         //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","========( PIN ANDA = 787878 )========")."\n";
-         $data2 = '{"pin":"787878"}';
-         $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp set pin: ";
-         $otpsetpin = trim(fgets(STDIN));
-         $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
-         echo $verifotpsetpin;
-         }else if($pilih1 == "n" || $pilih1 == "N"){
-         die();
-         }else{
-         echo color("red","-] GAGAL!!!\n");
-         }
-	 }	
-         }else{
-         goto setpin;
-	 }	
-         }else{
             echo color("red","[-] OTP yang anda input salah");
             echo"\n==================================\n\n";
             echo color("grey","[!] Silahkan input kembali\n");
@@ -159,7 +137,6 @@ echo "=============================\n";
          echo color("grey","[!] Silahkan registrasi kembali\n");
          goto ulang;
          }
-
 //  }
 
 // echo change()."\n";
