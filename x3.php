@@ -150,8 +150,6 @@ echo "=============================\n";
             echo"\n==================================\n\n";
             echo color("grey","[!] Silahkan input kembali\n");
             goto otp;
-            }
-         }
          }else{
          echo color("red","[-] Nomor sudah teregistrasi");
          echo"\n==================================\n\n";
