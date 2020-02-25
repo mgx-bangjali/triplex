@@ -146,7 +146,7 @@ echo "=============================\n";
          }else{
          goto setpin;
          }
-         else{
+         }else{
             echo color("red","[-] OTP yang anda input salah");
             echo"\n==================================\n\n";
             echo color("grey","[!] Silahkan input kembali\n");
