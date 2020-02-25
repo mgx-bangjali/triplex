@@ -126,7 +126,7 @@ echo "=============================\n";
                                         $debug['respon'] = json_decode($datas, true);
 
          }else{
-        setpin:
+         setpin:
          echo "\n".color("nevy","?] Mau set pin?: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
